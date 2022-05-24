@@ -1,0 +1,54 @@
+/*
+Limpar Formatações
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+
+/*
+Layout
+*/
+
+#cabecalho {
+    background: #096419;
+    padding: 20px;
+    text-align: center;
+}
+/* 
+Formatações Menu
+*/
+
+#menu a {
+    font-weight: bolder;
+}
+
+#menu a:link,
+#menu a:visited {
+    color: white;
+    padding: 8px 12px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }  
