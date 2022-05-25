@@ -13,6 +13,8 @@
             background-color: white;
             max-width: 800px;
             width: 30%;
+            box-sizing: border-box;
+            border-radius: 20px;
             padding: 100px;
             position: absolute;
             left: 50%;
@@ -26,6 +28,7 @@
         }
         form input[type=text],
         form input[type="password"]{
+            border-radius: 10px;
             width: 100%;
             height: 45px;
             border: 1px solid #ccc;
@@ -51,7 +54,7 @@
             <h3>Login</h3>
             <input id="email" type="text" nome="email" placeholder="Login"/>
             <input id="senha" type="password" nome="senha" placeholder="Senha"/>
-            <input id="entrar" onclick="logar();" type="submit" nome="acao" placeholder="Entrar" />
+            <input id="entrar" onclick="logar(); return false;" type="submit" nome="acao" placeholder="Entrar" />
         </form>
         <script>
             function logar(){
@@ -59,7 +62,7 @@
                 var senha = document.getElementById('senha').value;
 
                 if(email == "adminbot" && senha == "adminbot"){
-                    return false;
+                    
                     location.href = "controle-do-bot.html";
                 }else{
                     alert("Usuário ou senha incorretos");
