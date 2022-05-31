@@ -96,7 +96,23 @@ form input[type=submit]:hover{
 .principal-lateral a:active {
   text-decoration: none;
 }
+.principal-lateral a{
+  font-size: 20px;
+  font-style: oblique;
+}
 /*--CONTEUDO PRINCIPAL*/
+table{
+  border-style: hidden;
+  
+}
+table thead{
+  
+  background-color: #096419;
+}
+table td{
+  padding: 25px;
+  background-color: rgb(236, 227, 227);
+}
 .conteudo-principal{
   background: whitesmoke;
   margin: 15px auto;
