@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dados dos Usuarios</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/CSS/botcss.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="logo">
+            <h1>Dados dos Usuarios</h1>
+            <br>
+        </div>
+        <div id="menu">
+            <a href="/HTML/controle-do-bot.html">Controle do Bot</a>
+            <a href="/HTML/dados-dos-cursos.html">Dados dos Cursos</a>
+            <a href="/HTML/trilha-de-ativamento.html">Trilha de Ativamento</a>
+        </div>
+    </div>
+
+    <div class="principal">
+        <p>Teste Teste principal</p>
+        
+        <div class="principal-lateral">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>
+                    <button id="button-dados" onclick="ocultar();" type="submit" nome="acao"><a href="#1"> Acessar os dados dos usuários cadastrados </a></button>
+                </li>
+                <li>
+                    <button onclick="ocultar(); " type="submit" nome="acao"><a href="#2">Filtros de usuários</a></button>
+                </li>
+                <li>
+                    <button onclick="ocultar(); " type="submit" nome="acao"><a href="#3">Modificar os dados</a></button>
+                </li>
+                <li>
+                    <button onclick="ocultar(); " type="submit" nome="acao"><a href="#4">Alertar o usuário</a></button>
+                </li>
+                <li>
+                    <button onclick="ocultar(); " type="submit" nome="acao"><a href="#5">Especificar como a rematrícula foi feita</a></button>
+                </li>
+            </ul>
+        </div>
+        <div class="conteudo-principal">
+            <h1>Teste Teste Conteudo</h1>
+            <table id="dados" border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Curso</th>
+                    <th>Acessar Dados</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Teste123</td>
+                        <td>TesteNome</td>
+                        <td>Teste260</td>
+                        <td><button onclick="ocultar(); " type="submit" nome="acao">Acesso</button></td>
+                    </tr>
+                    <tr>
+                        <td>Teste123</td>
+                        <td>TesteNome</td>
+                        <td>Teste260</td>
+                        <td><button onclick="ocultar(); " type="submit" nome="acao">Acesso</button></td>
+                    </tr>
+                    <tr>
+                        <td>Teste123</td>
+                        <td>TesteNome</td>
+                        <td>Teste260</td>
+                        <td><button onclick="ocultar(); " type="submit" nome="acao">Acesso</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <h1></h1>
+    <p></p>
+    <script src="./JS/botjs.js"></script>
+    <script src="./JS/FunctionalMain.js"></script>
+    <script src="./JS/Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+<html>
+    <head>
+        <title>Login</title>
+        
+    </head>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        body{
+            background-image:  url("./IMG/fundo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        form{
+            background-color: #918d8d94;
+            max-width: 800px;
+            width: 30%;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+            box-shadow: 6px 6px 5px 2px #00000050;
+        }
+        form h3{
+            text-align: center;
+            color:  #000000;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form input[type=text],
+        form input[type="password"]{
+            border-radius: 10px;
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding: 10px 10px;
+            margin: 10px 0;
+            border: 0;
+            border-bottom: 2px solid #000000;
+            background-color: #ffffff90;
+            outline: none;
+            font-size: 18px;
+            transition: all .3s ease-out;
+        }
+        form button[type=submit]{
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+            background:  #25a25a;
+            color: white;
+            border:0;
+            border-radius: 30px;
+        }
+        form input[type=submit]:hover{
+            background-color: #1c7943;
+        }
+        
+    </style>
+    <body>
+        <form>
+            <h3>Login</h3>
+            <input id="user" type="text" nome="user" placeholder="Login"/>
+            <input id="senha" type="password" nome="senha" placeholder="Senha"/>
+            <button id="entrar" onclick="logar(); return false;" type="submit" nome="acao">Entrar</button>
+        </form>
+        <script>
+            function logar(){
+                var user = document.getElementById('user').value;
+                var senha = document.getElementById('senha').value;
+                
+                if(user == "adminbot" && senha == "adminbot"){
+                    location.href = "dados-dos-usuarios.html";
+                }else{
+                    
+                    alert("Usuário ou senha incorretos");
+                    user.value('');
+                }
+            }
+        </script>
+    </body>
+</html>
